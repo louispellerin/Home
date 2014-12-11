@@ -6,7 +6,7 @@ The Home repository is the starting point for people to learn about ASP.NET vNex
 
 ASP.NET vNext is being actively developed by the ASP.NET team assigned to the Microsoft Open Tech Hub and in collaboration with a community of open source developers. Together we are dedicated to creating the best possible platform for web development.
 
-The samples provided in this repo are designed to show some of the features of the new framework and to provide a starting point for further exploration. All the component packages are available on Nuget. To try out the latest bits under development switch to the dev branch of the Home repo and use the dev feed in Nuget.config (https://www.myget.org/F/aspnetvnext).
+The samples provided in this repo are designed to show some of the features of the new framework and to provide a starting point for further exploration. All the component packages are available on NuGet. To try out the latest bits under development switch to the dev branch of the Home repo and use the dev feed in NuGet.config (https://www.myget.org/F/aspnetvnext).
 
 ## Contents
 
@@ -37,10 +37,10 @@ That said, you can also try out ASP.NET vNext with just a command-prompt and a t
 
 ### Install the K Version Manager (KVM)
 
-The first thing we need to do is setup the tools required to build and run an application. We will start out by getting the [K Version Manager (KVM)](https://github.com/aspnet/Home/wiki/version-manager). You use the K Version Manager to install different versions of the ASP.NET vNext runtime and switch between them.
+The first thing we need to do is setup the tools required to build and run an application. We will start out by getting the [K Version Manager (KVM)](https://github.com/aspnet/Home/wiki/version-manager). We use the K Version Manager to install different versions of the ASP.NET vNext runtime and switch between them.
 
 #### Windows
-To install KVM on Windows run the following command, which will download and run a script that installs KVM for the current user (requires admin privileges):
+To install KVM on Windows run the following command, which will download and run a script that installs KVM for the current user (requires admin privileges for Powershell):
 
 ```
 @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/aspnet/Home/release/kvminstall.ps1'))"
@@ -60,7 +60,7 @@ To install KVM and the correct version of Mono on OS X using [Homebrew](http://b
 
 #### Linux:
 
-To install KVM on Linux run the following command:
+Installing KVM need `curl`. Do verify if that is installed on the machine. Next install KVM on Linux run the following command:
 
 ```
 curl -sSL https://raw.githubusercontent.com/aspnet/Home/release/kvminstall.sh | sh && source ~/.kre/kvm/kvm.sh
